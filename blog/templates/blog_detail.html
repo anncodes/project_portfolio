@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block page_content %}
+<div class="container">
+    <div class="blog">
 <div class="col-md-8 offset-md-2">
     <h1>{{ post.title }}</h1>
     <small>
@@ -32,5 +34,7 @@
     <p>{{ comment.body }}</p>
     <hr>
     {% endfor %}
+</div>
+</div>
 </div>
 {% endblock %}

@@ -1,22 +1,78 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-<h1>Projects</h1>
-<div class="row">
-{% for project in projects %}
-    <div class="col-md-4">
-        <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}">
-            <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
-                   class="btn btn-primary">
-                    Read More
-                </a>
-            </div>
+
+<div class="home">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="animated-text">
+            <h1 class="typed">Ann Margaret Gepulle()</h1>
+        </div>
+        <p class="lead">Full Stack Web Developer</p>
+        <a href="#" class="btn btn-primary btn-lg">View my works</a>  
+    </div>
+   <!--  <div class="animated-text">
+        I'm a <span></span>
+    </div> -->
+</div>
+<div class="container">
+    <h4 class="titles">About</h4>
+    <div class="row">
+        <div class="meet-ann">
+                <div class="col-sm-6">
+                    <p>I'm a Full Stack Web Developer.  <br />
+                        My journey in the world of web development has been fueled by a deep-seated curiosity and a desire to 
+                        create solutions by building applications.<br>
+                        I live in Montreux, Switzerland.</p>              
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-md-12 equal-spacing">
+                            <i class="devicon-python-plain-wordmark"></i>
+                            <i class="devicon-django-plain-wordmark"></i>
+                            <i class="devicon-flask-original-wordmark"></i>
+                            <i class="devicon-php-plain"></i>
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>  
+                        </div>        
+                    </div>
+                </div>
         </div>
     </div>
-    {% endfor %}
+
+    <div class="projects"></div>
+        <h4 class="titles">Projects</h4>
+        <div class="row">
+        {% for project in projects %}
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static project.image %}" alt="  ">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.introtext }}</p>
+                        <a href="{% url 'project_detail' project.pk %}"
+                        class="btn btn-primary">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
+
+<div id="contact_id" class="contact">
+    <div class="container">
+    <h4 class="titles">Contact me</h4>
+    <div class="col-md-6">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+    
+    </div>
+
+</div>
+
 {% endblock %}

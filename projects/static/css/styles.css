@@ -1,0 +1,226 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Roboto', 'Avenir' , Arial, Helvetica, sans-serif;
+}
+
+p{
+  line-height: 1.6;
+  font-size: medium;
+  text-align: justify;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #A1151A;
+  border: 1px solid #A1151A;
+}
+
+.btn-primary{
+  background-color: #b73f43;
+  border-color: #b73f43;
+}
+.btn-primary:focus, 
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(:disabled):active {
+  background-color: #af4a4f;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #af4a4f;
+}
+
+/* Typography */
+h1,h2,h3,
+h4,h5,h6{
+  font-family: 'Roboto', 'Avenir' , Arial, Helvetica, sans-serif;
+}
+
+
+/*
+ * Base structure
+ */
+html,
+body{
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 30px;
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+
+/* Navbar customisations*/
+.logo a{
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+
+a.navbar-brand.logo:hover{
+  color: #b65a5f;
+}
+
+.nav-limk:active{
+  color: #fff;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.btn-primary:not(:disabled):not(:disabled):active{
+  background-color:#A1151A !important;
+  color:#b65a5f;
+}
+
+.navbar-light .navbar-toggler-icon{
+  color:#d7cbcb;
+}
+
+.nav > li > a {
+ color: #fff;
+}
+
+.titles{
+  margin: 40px 0 30px;
+  font-size: 30px;
+  color: #473d3d;
+  font-family: "Nunito", sans-serif;
+}
+
+
+.banner{
+  margin-top:0;
+}
+
+.lead{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.jumbotron{
+  background-color: #fff;
+  color:#222;
+  text-align: center;
+  border-bottom: 1px solid #d7cbcb;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.jumbotron p{
+  text-align: center;
+}
+
+.jumbotron h1{
+  font-family: 'Nunito', sans-serif;
+}
+
+i{
+  font-size:70px;
+  color:#b73f43;
+  margin: 20px 5px;
+}
+
+.meet-ann p{
+  text-align: justify;
+  font-size: medium;
+}
+
+.equal-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+
+.equal-spacing i {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
+
+
+.bg-light{
+  background-color:#A1151A !important;
+}
+
+.banner{
+  background-color: #A1151A;
+}
+
+.projects{
+  margin-top: 50px;
+}
+
+.blog {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-amg{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #A1151A;
+  color: #fff;
+}
+
+.contact{
+  background-color: #ba7074;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+/* Animated text */
+.animated-text{
+  font-family: "Nunito", sans-serif;
+  min-width: 450px;
+  display: inline-block;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-color: transparent}
+  50% {border-color: black}
+  100% {border-color: transparent}
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

@@ -10,7 +10,8 @@ Projects: A showcase of the projects I've worked on, complete with descriptions,
 Skills: An overview of my technical skills and proficiency in different programming languages, frameworks, and tools. <br>
 Experience: Details about my professional experience, including past positions, roles, and responsibilities.<br />
 Contact: A way for visitors to get in touch with me, whether it's for job opportunities, collaborations, or general inquiries.<br>
-Customisations
+
+## Customisations
 While I used the Real Python tutorial as a starting point, I have customized the front end to give the portfolio a unique look and feel that represents my personality and style. Some of the customizations include:<br>
 
 Design: A personalised design that reflects my branding and aesthetics.<br>
